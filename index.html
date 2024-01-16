@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Love</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="back">
+      <div class="love-1"></div>
+      <div class="love-2"></div>
+      <p id="tap" class="justify-self-center text-center font-serif animate-bounce font-semibold mt-[30rem] hidden">Tap Love</p>
+    </div>
+    
+    <script>
+      const love1 = document.querySelector(".love-1");
+      const love2 = document.querySelector(".love-2");
+
+      setTimeout(() => {
+        const tap = document.getElementById('tap')
+
+        love1.addEventListener("click", () => {
+          window.location.href = "/main.html";
+        });
+        love2.addEventListener("click", () => {
+          window.location.href = "/main.html";
+        });
+  
+        tap.style.display = 'block'
+      }, 8000);
+    </script>
+  </body>
+</html>
